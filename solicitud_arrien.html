@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bicycle rental application</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+
+<style>
+    body {
+    background-image: url(assets/img/fondojpg.jpeg);
+    background-size: cover; /* Ajusta el tamaño del fondo para cubrir todo el body */
+    background-position: center; /* Centra el fondo */
+    height: 100vh;
+    margin: 0; /* Ajuste para quitar el margen predeterminado del body */
+    font-family: Arial, sans-serif; /* Fuente predeterminada */
+}
+</style>
+
+<body>
+
+<!-- Formulario de Arriendo de Bicicletas -->
+<form action="#" class="formulario__arriendo">
+    <h2>Solicitud de Arriendo de Bicicletas</h2>
+    <div class="input-group">
+        <label for="tipo_bicicleta">Tipo de Bicicleta:</label>
+        <select name="tipo_bicicleta" id="tipo_bicicleta" required>
+            <option value="">Selecciona tipo</option>
+            <option value="bicicleta1">Bicicleta 1</option>
+            <option value="bicicleta2">Bicicleta 2</option>
+            <option value="bicicleta3">Bicicleta 3</option>
+        </select>
+    </div>
+    <div class="input-group">
+        <label for="fecha_inicio">Fecha de Inicio:</label>
+        <input type="date" id="fecha_inicio" name="fecha_inicio" required>
+    </div>
+    <div class="input-group">
+        <label for="fecha_fin">Fecha de Fin:</label>
+        <input type="date" id="fecha_fin" name="fecha_fin" required>
+    </div>
+    <div class="input-group">
+        <label for="forma_pago">Forma de Pago:</label>
+        <select name="forma_pago" id="forma_pago" required>
+            <option value="">Selecciona forma de pago</option>
+            <option value="efectivo">Efectivo</option>
+            <option value="tarjeta">Tarjeta de Crédito</option>
+            <option value="debito">Debito</option>
+        </select>
+    </div>
+    <div class="input-group">
+        <label for="deposito_garantia">Depósito de Garantía:</label>
+        <input type="number" id="deposito_garantia" name="deposito_garantia" placeholder="Depósito de garantía">
+    </div>
+    <button type="submit">Solicitar Arriendo</button>
+</form>
+
+
+
+<script src="js/script2.js"></script>
+</body>
+</html>

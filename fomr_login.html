@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login_Register - MasterBikes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body{
+            background-image: url(assets/img/fondojpg.jpeg);
+            background-size: cover; /* Ajusta el tamaño del fondo para cubrir todo el body */
+            background-position: center; /* Centra el fondo */
+            height: 100vh;
+        }
+    </style>
+
+</head>
+<body>
+    <main>
+        <div class="contenedor__todo">
+            <div class="caja__trasera">
+                <div class="caja__trasera-login">
+                    <h3>¿Ya tienes una cuenta?</h3>
+                    <p>Inicia sesión para entrar en la página</p>
+                    <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+                </div>
+                <div class="caja__trasera-register">
+                    <h3>¿Aún no tienes una cuenta?</h3>
+                    <p>Regístrate para que puedas iniciar sesión</p>
+                    <button id="btn__registrarse">Registrarse</button>
+                </div>
+            </div>
+
+            <!--Formulario de Login y registro-->
+            <div class="contenedor__login-register">
+                <!--Login-->
+                <form action="register.php" method="post" class="formulario__login">
+                    <h2>Iniciar Sesión</h2>
+                    <input type="text" name="login_email" placeholder="Correo Electrónico">
+                    <input type="password" name="login_password" placeholder="Contraseña">
+                    <button type="submit">Entrar</button>
+                </form>
+
+                <!--Register-->
+                <form action="register.php" method="post" class="formulario__register">
+                    <h2>Registrarse</h2>
+                    <input type="text" name="nombre" placeholder="Nombre completo">
+                    <input type="text" name="email" placeholder="Correo Electrónico">
+                    <input type="text" name="usuario" placeholder="Usuario">
+                    <input type="password" name="contraseña" placeholder="Contraseña">
+                    <button type="submit">Registrarse</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>

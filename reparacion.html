@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Repair request</title>
+    <style>
+        /* Estilos para el formulario de solicitud de servicio de reparación */
+
+body {
+    background-image: url(assets/img/fondojpg.jpeg);
+    background-size: cover; /* Ajusta el tamaño del fondo para cubrir todo el body */
+    background-position: center; /* Centra el fondo */
+    height: 100vh;
+    margin: 0; /* Ajuste para quitar el margen predeterminado del body */
+    font-family: Arial, sans-serif; /* Fuente predeterminada */
+}
+
+header {
+    text-align: center;
+    padding: 50px 0;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 3.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para mejorar la legibilidad */
+}
+
+.repair-service-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.repair-service-form h2 {
+    text-align: center;
+    color: #333;
+}
+
+.repair-service-form label {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+}
+
+.repair-service-form input,
+.repair-service-form select,
+.repair-service-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.repair-service-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.repair-service-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Media queries para hacer el diseño responsive */
+
+@media only screen and (max-width: 600px) {
+    .repair-service-form {
+        padding: 15px;
+    }
+
+    .repair-service-form h2 {
+        font-size: 24px; /* Ajusta el tamaño del título para pantallas pequeñas */
+    }
+
+    .repair-service-form label {
+        font-size: 14px; /* Ajusta el tamaño de la etiqueta para pantallas pequeñas */
+    }
+
+    .repair-service-form input,
+    .repair-service-form select,
+    .repair-service-form textarea {
+        font-size: 14px; /* Ajusta el tamaño de fuente de los campos para pantallas pequeñas */
+    }
+
+    .repair-service-form button {
+        padding: 12px;
+        font-size: 14px; /* Ajusta el tamaño de fuente del botón para pantallas pequeñas */
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Solicita tu Servicio de Reparación en MasterBikes</h1>
+        <!-- Existing header content -->
+    </header>
+    <div class="container-items">
+        <!-- Existing product items -->
+    </div>
+
+    <!-- Repair Service Form -->
+    <div class="repair-service-form">
+        <h2>Solicitud de Servicio de Reparación</h2>
+        <form id="repairForm">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="date">Fecha:</label>
+            <input type="date" id="date" name="date" required />
+
+            <label for="time">Hora:</label>
+            <input type="time" id="time" name="time" required />
+
+            <label for="problem">Descripción del Problema:</label>
+            <textarea id="problem" name="problem" rows="4" required></textarea>
+
+            <button type="submit">Enviar Solicitud</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('repairForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Solicitud de servicio de reparación enviada. Nos pondremos en contacto con usted pronto.');
+            // Aquí podrías agregar la lógica para enviar el formulario al servidor
+            this.reset();
+        });
+    </script>
+</body>
+</html>
